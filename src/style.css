@@ -29,6 +29,10 @@
   border-radius: 50%;
   border: 5px solid rgb(0, 102, 255);
 }
+.ListIcons .image:hover {
+  scale: 1.05;
+  cursor: pointer;
+}
 
 /* -------list icons -----*/
 
