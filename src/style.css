@@ -1,0 +1,72 @@
+/* main css */
+.main {
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  display: flex;
+  margin: 20px;
+}
+.container {
+  display: flex;
+  width: 400px;
+  background-color: red;
+  align-items: center;
+  text-align: center;
+  border-radius: 20px;
+  flex-wrap: wrap;
+}
+.Avatar {
+  flex: 1;
+  padding: 100px;
+}
+.Avatar .name {
+  font-size: 42px;
+}
+.Avatar .image,
+.ListIcons .image {
+  width: 100;
+  height: 100;
+  border-radius: 50%;
+  border: 5px solid rgb(0, 102, 255);
+}
+
+/* -------list icons -----*/
+
+.ListIcons {
+  flex: 1;
+  /* background-color: #303030; */
+  color: #fff;
+}
+.ListIcons .row {
+  background-color: #303030;
+  display: flex;
+  padding: 50px;
+  /* border-top: 1px solid #000; */
+  box-shadow: inset -4px 2px 1px -2px #000;
+  align-items: center;
+  text-align: left;
+  color: #e8e8e8;
+}
+.ListIcons .row .text {
+  display: block;
+  margin-left: 20px;
+  line-height: 1.2;
+}
+.ListIcons .row .title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+}
+.end {
+  border-radius: 0 0 20px 20px;
+  background-color: pink !important;
+  justify-content: center;
+  display: block;
+}
+
+.end button {
+  padding: 20px 20px;
+  border-radius: 10px;
+  border: 1px solid #e7e7e7;
+  width: 100%;
+}
