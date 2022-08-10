@@ -1,40 +1,21 @@
 import React from 'react';
-export default function ListIcons() {
-  const icons = [
-    {
-      icon: 'Twitter',
-      text: 'Purus in mollis nunc sed semper risus tortor pretium.',
-    },
-    {
-      icon: 'YouTube',
-      text: 'Senectus et netus fames magna turpis egestas maecenas.',
-    },
-    {
-      icon: 'Instagram',
-      text: 'Morbi quis commodo aenean donec consectetur.',
-    },
-    {
-      icon: 'Tik Tok',
-      text: 'Donec pretium sapien nec nulla sagittis feugiat veroeros.',
-    },
-    {
-      icon: 'Snapchat',
-      text: 'Proin sagittis nisl rhoncus mattis et euismod lorem quis.',
-    },
-  ];
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCoffee } from '@fortawesome/free-solid-svg-icons';
+export default function ListIcons({ icons, email }) {
   return (
     <div className="ListIcons">
       {icons.map((item) => {
         return (
           <div className="row">
-            <div>
-              <img
+            <div className="image">
+              {/* <img
                 src="https://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50?s=100"
                 className="image"
-              />
+              /> */}
+              <FontAwesomeIcon icon={faCoffee} />
             </div>
             <div className="text">
-              <div className="title">{item.icon}</div>
+              <div className="title">{item.title}</div>
               <div>{item.text}</div>
             </div>
           </div>
@@ -42,7 +23,12 @@ export default function ListIcons() {
       })}
       <div className="row end">
         <div>
-          <button type="button">Email</button>
+          <a href={`emailto:${email}`}>
+            <button type="button">
+              <FontAwesomeIcon icon={faCoffee} />
+              <span style={{ marginLeft: 10 }}>Email</span>
+            </button>
+          </a>
         </div>
       </div>
     </div>
