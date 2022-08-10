@@ -9,16 +9,16 @@ export default function ListIcons({ icons, email }) {
         icons.map((item) => {
           return (
             <div className="row">
-              <div className="image">
-                {/* <img
-                src="https://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50?s=100"
-                className="image"
-              /> */}
-                {item && item.icon ? (
+              <div>
+                <img
+                  src="https://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50?s=100"
+                  className="image"
+                />
+                {/* {item && item.icon ? (
                   <FontAwesomeIcon icon={faCoffee} />
                 ) : (
                   <FontAwesomeIcon icon={faCoffee} />
-                )}
+                )} */}
               </div>
               <div className="text">
                 <div className="title">{item.title}</div>
