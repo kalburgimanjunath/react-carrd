@@ -1,31 +1,31 @@
 import React from 'react';
 import './style.css';
 import Container from './components/Container';
-import { faTwitter } from '@fortawesome/free-solid-svg-icons';
+import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 export default function App() {
   const icons = [
     {
-      icon: faTwitter,
+      icon: 'faCoffee',
       title: 'Twitter',
       text: 'Purus in mollis nunc sed semper risus tortor pretium.',
     },
     {
-      icon: faTwitter,
+      icon: 'faCoffee',
       title: 'YouTube',
       text: 'Senectus et netus fames magna turpis egestas maecenas.',
     },
     {
-      icon: faTwitter,
+      icon: 'faCoffee',
       title: 'Instagram',
       text: 'Morbi quis commodo aenean donec consectetur.',
     },
     {
-      icon: faTwitter,
+      icon: 'faCoffee',
       title: 'Tik Tok',
       text: 'Donec pretium sapien nec nulla sagittis feugiat veroeros.',
     },
     {
-      icon: faTwitter,
+      icon: 'faCoffee',
       title: 'Snapchat',
       text: 'Proin sagittis nisl rhoncus mattis et euismod lorem quis.',
     },

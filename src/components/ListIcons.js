@@ -1,7 +1,7 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCoffee } from '@fortawesome/free-solid-svg-icons';
-import { faTwitter } from '@fortawesome/free-solid-svg-icons';
+// import { faTwitter } from '@fortawesome/free-solid-svg-icons';
 export default function ListIcons({ icons, email }) {
   return (
     <div className="ListIcons">
@@ -15,7 +15,7 @@ export default function ListIcons({ icons, email }) {
                 className="image"
               /> */}
                 {item && item.icon ? (
-                  <FontAwesomeIcon icon={item.icon} />
+                  <FontAwesomeIcon icon={faCoffee} />
                 ) : (
                   <FontAwesomeIcon icon={faCoffee} />
                 )}
